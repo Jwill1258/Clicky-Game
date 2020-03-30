@@ -5,7 +5,9 @@ import "./style.css";
 // Component for the Navbar
 
 function Nav(props) {
+
   return (
+
     <nav className="navbar">
       <ul>
         <li className="brand">
@@ -13,11 +15,14 @@ function Nav(props) {
         </li>
         <NavMessage score={props.score} topScore={props.topScore} />
         <li>
-          Score: {props.score} | Top Score: {props.topScore}
+          Score: {props.score} | Winning Score: {props.topScore}
         </li>
       </ul>
     </nav>
+
   );
+
+
 }
 
 export default Nav;
